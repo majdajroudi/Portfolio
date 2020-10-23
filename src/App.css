@@ -7,6 +7,8 @@
   pointer-events: none;
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
@@ -36,3 +38,20 @@
     transform: rotate(360deg);
   }
 }
+
+.name{
+  font-size: 1em;
+  font-family: "Helvetica";
+}
+
+.developer-tag{
+  font-size: 1em;
+  color: #84A295;
+  font-family:'Dancing Script', cursive;
+}
+
+.text{
+  display: flex;
+  flex-direction: row;
+}
+
