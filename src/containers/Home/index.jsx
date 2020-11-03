@@ -1,13 +1,16 @@
 import React,{useState} from 'react';
 import NameAnimated from "../../components/Name/index"
-import Navbar from "./../../components/Navbar"
 
 const Home = () => {
-    const [introDone, setIntroDone] = useState(false)    
+    const [introDone, setIntroDone] = useState(false)
+    
+    const transformStyle = {
+        transform: "translateX(-50px)"
+    }
 
     return(
         <>
-            <NameAnimated introCheck={setIntroDone}/>
+            <NameAnimated style={introDone? transformStyle:""} introCheck={setIntroDone}/>
             {/* <Navbar /> */}
         </>
     )
