@@ -1,5 +1,7 @@
 .App {
   text-align: center;
+  background-color: rgb(66, 66, 66);
+  height: 100vh;
 }
 
 .App-logo {
@@ -40,8 +42,9 @@
 }
 
 .name{
-  font-size: 1em;
-  font-family: "Helvetica";
+  font-size: 3em;
+  font-family: "sans-serif";
+  color: white;
 }
 
 .developer-tag{
@@ -52,6 +55,10 @@
 
 .text{
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+  align-content: stretch;
+  align-items:center;
+  position: absolute;
+  top:35%;
+  left:30%
 }
-

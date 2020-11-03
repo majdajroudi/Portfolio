@@ -1,52 +1,54 @@
 import React, {useState} from "react"
-import 'bootstrap/dist/css/bootstrap.min.css';
-import {Col, Row} from "react-bootstrap"
-import Typical from "react-typical"
+import 'antd/dist/antd.css';
+import {Col } from "antd"
 import Typist from "react-typist"
 
 
-const NameAnimated = () => {
-    const [firstDone, setFirstDone] = useState(false)
-    const [secondDone, setSecondDone] = useState(false)
 
-  const handleFirstDone = () =>{
-    setFirstDone(true)
+const NameAnimated = ({introCheck}) => {
+    const [nameTyped, setNameTyped] = useState(false)
+    const [tagTyped, setTagTyped] = useState(false)
+
+  const handleNameTyped = () =>{
+    setNameTyped(true)
   }
 
-  const handleSecondDone = () => {
-    setSecondDone(true)
+  const handleTagTyped = () => {
+    setTagTyped(true)
+  }
+
+  const handleTypingDone = () => {
+      introCheck(true)
   }
 
   return (
     <div className="App">
         <h1 className="text">
-        <Row>
-            <Col md={{offset:4, span:4}} lg={{offset:4, span:4}}>
-                <Typist cursor={{hideWhenDone:true,hideWhenDoneDelay: 0}} onTypingDone={handleFirstDone}>
-                    <Typist.Delay ms={"500"}/>
-                    <span className="developer-tag">{"<developer>"}</span>
-                </Typist>
-            </Col>
-        </Row>
-        <Row>
-            <Col md={{offset:7, span:7}} lg={{offset:7, span:7}}>
-                {secondDone? <Typist cursor={{hideWhenDone: true}}>
-                    <Typist.Delay ms={"500"}/>
-                    <span className="name">Majd Ajroudi</span>
-                </Typist>:""}
-            </Col>
-        </Row>
-        <Row>
-            <Col md={{offset:10, span:10}} lg={{offset:10,span:10}}>
-                {firstDone? <Typist cursor={{hideWhenDone: true, hideWhenDoneDelay: 0}} onTypingDone={handleSecondDone}>
-                    <Typist.Delay ms={"500"}/>
-                    <span className="developer-tag">{"</developer>"}</span>
-                </Typist>: ""}
-            </Col>
-        </Row>
+                <Col >
+                    {nameTyped?<Typist cursor={{hideWhenDone:true,hideWhenDoneDelay: 0}} onTypingDone={handleTagTyped}>
+                        <Typist.Delay ms={"500"}/>
+                        <span className="developer-tag opener">{"<developer>"}</span>
+                    </Typist>:""}
+                </Col>
+                <Col >
+                    <Typist cursor={{hideWhenDone: true, hideWhenDoneDelay:0}} onTypingDone={handleNameTyped}>
+                        <Typist.Delay ms={"500"}/>
+                        <span className="name">Majd Ajroudi</span>
+                    </Typist>
+                </Col>
+                <Col >
+                    {tagTyped? <Typist cursor={{hideWhenDone: true}} onTypingDone={handleTypingDone}>
+                        <Typist.Delay ms={"500"}/>
+                        <span className="developer-tag closer">{"</developer>"}</span>
+                    </Typist>: ""}
+                </Col>
           </h1>
     </div>
   );
 }
 
 export default NameAnimated;
+
+
+
+// md={{offset:4, span:4}} lg={{offset:4, span:4}}

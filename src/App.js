@@ -1,12 +1,12 @@
 import React,{useState} from 'react';
 import './App.css';
-import NameAnimted from "./components/Name/index"
+import Home from "./containers/Home/index"
 
 function App() {
   return (
-    <>
-      <NameAnimted />
-    </>
+    <div className="App">
+      <Home />
+    </div>
   )
 }
 
