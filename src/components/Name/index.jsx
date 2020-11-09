@@ -2,10 +2,12 @@ import React, {useState} from "react"
 import 'antd/dist/antd.css';
 import {Col } from "antd"
 import Typist from "react-typist"
+import {motion} from "framer-motion"
+import "./index.css"
 
 
 
-const NameAnimated = ({introCheck}) => {
+const NameAnimated = ({introCheck, introDone}) => {
     const [nameTyped, setNameTyped] = useState(false)
     const [tagTyped, setTagTyped] = useState(false)
 
@@ -22,7 +24,7 @@ const NameAnimated = ({introCheck}) => {
   }
 
   return (
-    <div className="App">
+    <div className="home__nameAnimation">
         <h1 className="text">
                 <Col >
                     {nameTyped?<Typist cursor={{hideWhenDone:true,hideWhenDoneDelay: 0}} onTypingDone={handleTagTyped}>
@@ -39,11 +41,11 @@ const NameAnimated = ({introCheck}) => {
                 <Col >
                     {tagTyped? <Typist cursor={{hideWhenDone: true}} onTypingDone={handleTypingDone}>
                         <Typist.Delay ms={"500"}/>
-                        <span className="developer-tag closer">{"</developer>"}</span>
+                        <span className="developer-tag opener">{"</developer>"}</span>
                     </Typist>: ""}
                 </Col>
           </h1>
-    </div>
+    </div >
   );
 }
 

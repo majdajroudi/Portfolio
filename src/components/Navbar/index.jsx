@@ -1,28 +1,25 @@
-// import React,{useState} from "react"
-// import {useTransition, animated, Spring} from 'react-spring/renderprops'
-// import {Row, Col} from "antd"
+import React,{useState} from "react"
+import {Row, Col} from "antd"
+import {motion} from "framer-motion"
 
 
-// const Navbar = () => {
+const Navbar = () => {
 
-//     const items = [1,2,3,4]
+    return (
+        <motion.div style={{width:"50%"}} initial={{y:15, x:211, scale:1.3}} aniamte={{y:30,opacity:1}} transition={{duration:2}} >
+            <Row>
+                <motion.a >Home &nbsp;</motion.a>
+                <motion.a >About &nbsp;</motion.a>
+                <motion.a >Portfolio &nbsp;</motion.a>
+                <motion.a >Resume &nbsp;</motion.a>
+                <motion.a >Contact &nbsp;</motion.a>
+            </Row>
+        </motion.div>
+    )
+}
 
-//     return (
-//         <Spring from={{opacity: 0, marginTop:100}} to={{opacity:1, marginTop:0}}>
-//             {props =>
-//             <div style={props}>
-//                 <Row>
-//                     {items.map((item) => {
-//                         <Col>{item}</Col>
-//                     })}
-//                 </Row>
-//             </div>}
-//     </Spring>
-//     )
-// }
-
-// export default Navbar;
+export default Navbar;
 
 
-// // items.map(({ item, props, key }) =>
-// //                 <Col  >{item}</Col>)
+// items.map(({ item, props, key }) =>
+//                 <Col  >{item}</Col>)
