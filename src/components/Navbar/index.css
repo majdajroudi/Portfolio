@@ -1,0 +1,26 @@
+.navbar__elementsWrapper--element {
+    color:#C8C6CB;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.3em;
+}
+
+.navbar__elementsWrapper--element:hover {
+    background: -webkit-linear-gradient(#407C9C, #CD9278);
+     -webkit-background-clip: text;
+     -webkit-text-fill-color: transparent;
+}
+
+.navbar {
+    background-color: #31393D;
+    display: flex;
+    justify-content: flex-end;
+    align-items:center;
+    height: 7%;
+    width: 100%;
+}
+
+.navbar__elementsWrapper {
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+}

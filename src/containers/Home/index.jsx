@@ -1,32 +1,30 @@
-import React,{useState} from 'react';
-import NameAnimated from "../../components/Name/index"
+import React from 'react';
 import Navbar from "../../components/Navbar/index"
-import {motion} from "framer-motion"
+import homeImg from "../../images/homeImg.svg"
+// import {motion} from "framer-motion"
+import { Col, Row,Card} from "antd"
 import "./index.css"
 
 const Home = () => {
-    const [introDone, setIntroDone] = useState(false)
-    
-    const transformStyle = {
-        transform: "translateX(-50px)"
-    }
-
-    return(
-        <div className="home__content">
-            <motion.div
-            initial={{y:-150}}
-            animate={{
-              x: !introDone?10: -300,
-              y: -150,
-              scale: !introDone? 1: 0.87,
-              rotate: 0,
-            }}
-            transition={{duration:1}}>
-            <NameAnimated style={introDone? transformStyle:""} introCheck={setIntroDone} introDone={introDone}/>
-            </motion.div>
-            {introDone? <Navbar /> : ""}
-            {/* <Skills /> */}
-            
+    return (
+        <div className="home">
+            <Card className="home__contentBox" bordered={false}>
+                <Navbar />
+                <Row className="home__contentBox__bottom">
+                    <Col className="home__contentBox__nameCol">
+                        <Col>
+                            <h1>Majd</h1>
+                            <h1>Ajroudi</h1>
+                            <h3>Front End Developer</h3>
+                        </Col>
+                    </Col>
+                    <Col className="home__contentBox__imgCol">
+                        <Row className="home__contentBox__imgContainer">
+                            <img src={homeImg} alt="walking man illustration"/>
+                        </Row>
+                    </Col>
+                </Row>
+            </Card>
         </div>
     )
 }

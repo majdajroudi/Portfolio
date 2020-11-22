@@ -1,20 +1,22 @@
 import React,{useState} from "react"
 import {Row, Col} from "antd"
 import {motion} from "framer-motion"
+import {NavLink} from "react-router-dom";
+import "./index.css"
 
 
 const Navbar = () => {
 
     return (
-        <motion.div style={{width:"50%"}} initial={{y:15, x:211, scale:1.3}} aniamte={{y:30,opacity:1}} transition={{duration:2}} >
-            <Row>
-                <motion.a >Home &nbsp;</motion.a>
-                <motion.a >About &nbsp;</motion.a>
-                <motion.a >Portfolio &nbsp;</motion.a>
-                <motion.a >Resume &nbsp;</motion.a>
-                <motion.a >Contact &nbsp;</motion.a>
+            <Row className="navbar">
+                <Row className="navbar__elementsWrapper">
+                    <NavLink className="navbar__elementsWrapper--element" to="/" >Home &nbsp;</NavLink>
+                    <NavLink className="navbar__elementsWrapper--element" to="/about" >About &nbsp;</NavLink>
+                    <NavLink className="navbar__elementsWrapper--element" to="/portfolio" >Portfolio &nbsp;</NavLink>
+                    <NavLink className="navbar__elementsWrapper--element" to="/resume">Resume &nbsp;</NavLink>
+                    <NavLink className="navbar__elementsWrapper--element" to="/contact" >Contact &nbsp;</NavLink>
+                </Row>
             </Row>
-        </motion.div>
     )
 }
 

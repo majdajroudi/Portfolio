@@ -1,9 +1,82 @@
-.home__content{
-    background-color: rgb(66, 66, 66);
+@import url('https://fonts.googleapis.com/css2?family=Texturina:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Almarai&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,600;1,100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,600;1,100&family=Karla:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap');
+
+.home {
+    /* background-color: rgb(66, 66, 66); */
+    background-color: #407C9C;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.home__contentBox .ant-card-body{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height:100%;
+}
+
+.home__contentBox{
+    background-color: #31393D;
+    display: flex;
+    flex-direction: column;
+    height: 80%;
+    width: 80%;
+}
+
+.home__contentBox__bottom {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+}
+
+
+.home__contentBox__nameCol {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: stretch;
-    width: 100vw;
-    height: 100vh;
+    align-items: center;   
+    width: 50%;
+}
+
+.home__contentBox__nameCol div {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+}
+
+.home__contentBox__nameCol div h1{
+    color: white;
+    font-size: 5em;
+    /* text-shadow: 5px 3px 0px -1px #B8623F; */
+    text-shadow: 2px 2px #B8623F;
+    font-family: "Karla", serif;
+    margin: 0px;
+}
+
+.home__contentBox__nameCol div h3 {
+    color:#B8623F;
+    font-size: 2em;
+    font-family: "Nanum Gothic", serif;
+}
+
+.home__contentBox__imgCol {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.home__contentBox__imgContainer{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.home__contentBox__imgContainer img {
+    max-width: 70%;
 }
