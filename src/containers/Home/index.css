@@ -46,7 +46,7 @@
 .home__contentBox__nameCol div {
     display: flex;
     flex-direction: column;
-    justify-content: start;
+    justify-content: flex-start;
 }
 
 .home__contentBox__nameCol div h1{
@@ -99,7 +99,7 @@
     .home__contentBox__imgContainer{
         width: 100%;
         display: flex;
-        justify-content: start;
+        justify-content: flex-start;
     }
 
     .home__contentBox__bottom {
