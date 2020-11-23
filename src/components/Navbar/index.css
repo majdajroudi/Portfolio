@@ -6,7 +6,6 @@
 
 .navbar__elementsWrapper--element:hover {
     background: -webkit-linear-gradient(#407C9C, #CD9278);
-     -webkit-background-clip: text;
      -webkit-text-fill-color: transparent;
 }
 
