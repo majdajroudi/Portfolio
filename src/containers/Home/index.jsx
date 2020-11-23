@@ -2,7 +2,6 @@ import React, {useState} from 'react';
 import Navbar from "../../components/Navbar/index"
 import homeImg from "../../images/homeImg.svg"
 // import {motion} from "framer-motion"
-import Drawer from "./../../components/Drawer/index"
 import { Col, Row,Card} from "antd"
 import "./index.css"
 

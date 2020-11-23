@@ -1,7 +1,6 @@
 import React from 'react';
 import Navbar from "../../components/Navbar/index"
 import homeImg from "../../images/homeImg.svg"
-// import {motion} from "framer-motion"
 import { Col, Row,Card} from "antd"
 import "./index.css"
 

@@ -1,6 +1,5 @@
-import React,{useState} from "react"
-import {Row, Col} from "antd"
-import {motion} from "framer-motion"
+import React from "react"
+import {Row} from "antd"
 import {NavLink} from "react-router-dom";
 import "./index.css"
 
