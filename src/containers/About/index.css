@@ -1,10 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Texturina:wght@200&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Almarai&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,600;1,100&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,600;1,100&family=Karla:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap');
 
-.home {
+.about {
     /* background-color: rgb(66, 66, 66); */
     background-color: #407C9C;
     display: flex;
@@ -13,14 +10,14 @@
     height: 100vh;
 }
 
-.home__contentBox .ant-card-body{
+.about__contentBox .ant-card-body{
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     height:100%;
 }
 
-.home__contentBox{
+.about__contentBox{
     background-color: #31393D;
     display: flex;
     flex-direction: column;
@@ -28,14 +25,14 @@
     width: 80%;
 }
 
-.home__contentBox__bottom {
+.about__contentBox__bottom {
     display: flex;
     flex-direction: row;
     height: 100%;
 }
 
 
-.home__contentBox__nameCol {
+.about__contentBox__nameCol {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -43,13 +40,13 @@
     width: 50%;
 }
 
-.home__contentBox__nameCol div {
+.about__contentBox__nameCol div {
     display: flex;
     flex-direction: column;
     justify-content: start;
 }
 
-.home__contentBox__nameCol div h1{
+.about__contentBox__nameCol div h1{
     color: white;
     font-size: 5em;
     /* text-shadow: 5px 3px 0px -1px #B8623F; */
@@ -58,51 +55,25 @@
     margin: 0px;
 }
 
-.home__contentBox__nameCol div h3 {
+.about__contentBox__nameCol div h3 {
     color:#B8623F;
     font-size: 2em;
     font-family: "Nanum Gothic", serif;
 }
 
-.home__contentBox__imgCol {
+.about__contentBox__imgCol {
     width: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.home__contentBox__imgContainer{
+.about__contentBox__imgContainer{
     width: 100%;
     display: flex;
     justify-content: center;
 }
 
-.home__contentBox__imgContainer img {
+.about__contentBox__imgContainer img {
     max-width: 70%;
-}
-
-@media (max-width: 768px) {
-    .home__contentBox__imgContainer img {
-        max-width: 90%;
-    }
-
-    .home__contentBox__nameCol div h1{
-        font-size: 3.5em;
-    }
-    
-    .home__contentBox__nameCol div h3 {
-        font-size: 1.4em;
-    }
-}
-
-@media (max-width: 425px) {
-    .home__contentBox__imgContainer{
-        width: 100%;
-        display: flex;
-        justify-content: start;
-    }
-
-    .home__contentBox__bottom {
-        flex-direction: column;
-    }
 }
