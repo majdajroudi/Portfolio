@@ -1,0 +1,79 @@
+.portfolio {
+    background-color:#31393D;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.portfolio__bottom {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 50px 0;
+}
+
+.imageCard {
+    width:40%;
+    height:auto;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    border-color: #31393D;
+    overflow: hidden;
+    opacity: 1;
+    margin: 30px 20px;
+}
+
+.websiteDescription {
+    position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(29, 106, 154, 0.72);
+  color: #fff;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity .2s, visibility .2s;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.websiteName {
+    color: white;
+    font-size: 4em;
+    text-shadow: 2px 2px #B8623F;
+    font-family: "Karla", serif;
+    margin: 0px;
+}
+
+.imageCard:hover .websiteDescription {
+    visibility: visible;
+    opacity: 1;
+    animation: movedown 1s
+  }
+
+.imageCard:hover{
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+.imageCard .ant-card-body{
+    width:100%;
+    height:auto;
+    padding: 0;
+    
+}
+
+.websiteImage {
+    max-width: 100%;
+    max-height: auto;
+}
+
+@keyframes movedown
+{ from {top:-20px; opacity: 0;}
+to {top:0px; opacity: 1}
+}

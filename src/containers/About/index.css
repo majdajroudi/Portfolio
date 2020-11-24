@@ -5,60 +5,41 @@
     /* background-color: rgb(66, 66, 66); */
     background-color: #407C9C;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 100vh;
-}
-
-.about__contentBox .ant-card-body{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    height:100%;
-}
-
-.about__contentBox{
     background-color: #31393D;
-    display: flex;
-    flex-direction: column;
-    height: 80%;
-    width: 80%;
+    height: 75vh;
 }
 
 .about__contentBox__bottom {
     display: flex;
     flex-direction: row;
+    justify-content: space-around;
     height: 100%;
 }
 
 
-.about__contentBox__nameCol {
+.about__contentBox__textCol {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;   
+    width: 45%;
+}
+
+.about__contentBox__textCol div {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;   
-    width: 50%;
+    align-items: center;
 }
 
-.about__contentBox__nameCol div {
-    display: flex;
-    flex-direction: column;
-    justify-content: start;
-}
-
-.about__contentBox__nameCol div h1{
+.about__contentBox__textCol div p{
     color: white;
-    font-size: 5em;
     /* text-shadow: 5px 3px 0px -1px #B8623F; */
-    text-shadow: 2px 2px #B8623F;
-    font-family: "Karla", serif;
     margin: 0px;
-}
-
-.about__contentBox__nameCol div h3 {
-    color:#B8623F;
-    font-size: 2em;
-    font-family: "Nanum Gothic", serif;
+    text-align: justify;
 }
 
 .about__contentBox__imgCol {

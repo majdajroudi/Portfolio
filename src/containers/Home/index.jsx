@@ -1,20 +1,16 @@
-import React, {useState} from 'react';
-import Navbar from "../../components/Navbar/index"
+import React from 'react';
 import homeImg from "../../images/homeImg.svg"
+import {Sides} from "./../../components/Sides"
 // import {motion} from "framer-motion"
-import { Col, Row,Card} from "antd"
+import { Col, Row} from "antd"
 import "./index.css"
 
 const Home = () => {
-    const [screenWidth, setScreenWidth] = useState(window.innerWidth);
-    window.addEventListener("resize", () => {
-        setScreenWidth(window.innerWidth)
-    })
 
     return (
-        <div className="home">
-            <Card className="home__contentBox" bordered={false}>
-                {screenWidth > 768 && <Navbar /> }
+        <div className="pageWrapper">
+            <Sides />
+            <div className="home">
                 <Row className="home__contentBox__bottom">
                     <Col className="home__contentBox__nameCol">
                         <Col>
@@ -29,7 +25,8 @@ const Home = () => {
                         </Row>
                     </Col>
                 </Row>
-            </Card>
+            </div>
+            <Sides />
         </div>
     )
 }

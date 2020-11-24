@@ -10,22 +10,10 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
-}
-
-.home__contentBox .ant-card-body{
-    display: flex;
     flex-direction: column;
-    justify-content: space-around;
-    height:100%;
-}
-
-.home__contentBox{
-    background-color: #31393D;
-    display: flex;
-    flex-direction: column;
-    height: 80%;
-    width: 80%;
+    background-color:#31393D ;
+    height: 75vh;
+    width: 100%;
 }
 
 .home__contentBox__bottom {
