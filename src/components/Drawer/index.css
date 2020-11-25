@@ -1,0 +1,29 @@
+.drawerWrapper {
+    background-color: #407C9C;
+    display: flex;
+    justify-content: center;
+}
+
+.drawer {
+    background-color: #31393D;
+    width: 80%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.drawer--button{
+    background-color: #31393D;
+}
+
+.drawer__drawer__linksWrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center ;
+}
+
+.ant-drawer-body,
+.ant-drawer-header {
+    background-color:#31393D ;
+    border: none;
+}

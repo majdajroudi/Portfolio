@@ -3,7 +3,8 @@ import './App.css';
 import 'antd/dist/antd.css'
 import Home from "./containers/Home/index";
 import About from "./containers/About";
-import Portfolio from "./containers/Portfolio"
+import Portfolio from "./containers/Portfolio";
+import Drawer from "./components/Drawer"
 import Publications from "./containers/Publications"
 import Contact from "./containers/Contact"
 import {BrowserRouter as Router, Route} from "react-router-dom";
@@ -15,6 +16,7 @@ function App() {
   return (
     <Router className="App">
       <Route path="/" component={TopBottom} />
+      <Route path="/" component={Drawer} />
       <Route path="/" component={Navbar} />
       <Route exact path="/" component={Home} />
       <Route path="/about" component={About} />

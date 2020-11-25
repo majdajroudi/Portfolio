@@ -1,37 +1,58 @@
-import React, {useState} from "react"
-import { Drawer, Button } from 'antd';
+import React, { useState } from 'react';
+import { Drawer, Button, Row, Col } from 'antd';
+import {NavLink, useLocation} from "react-router-dom";
+import {MenuOutlined } from "@ant-design/icons";
+import "./index.css"
 
-const DrawerBar = () => {
-    const [isDrawerVisible, setIsDrawerVisible] = useState(false)
+const DrawerMenu = () => {
+  const [visible, setVisible] = useState(false);
+  const [screenWidth, setScreenWidth] = useState(window.innerWidth);
+  const location = useLocation()
+  window.addEventListener("resize", () => {
+      setScreenWidth(window.innerWidth)
+  })
 
-    const showDrawer = () => {
-        setIsDrawerVisible(true)
-    };
+  const showDrawer = () => {
+    setVisible(true);
+  };
 
-    const onClose = () => {
-        setIsDrawerVisible(false)
-    };
+  const onClose = () => {
+    setVisible(false);
+  };
 
-    return (
-      <div className="site-drawer-render-in-current-wrapper">
-        <div style={{ marginTop: 16 }}>
-          <Button type="primary" onClick={showDrawer}>
-            Open
-          </Button>
-        </div>
+  const isCurrentPath = (path) => {
+    if (location.pathname === path) {
+      return "navbar__elementsWrapper--element navbar__activeElement";
+    } else {
+      return "navbar__elementsWrapper--element";
+    }
+  };
+
+  return (
+    screenWidth <= 1024 && <Row className="drawerWrapper">
+      <Row className="drawer">
+        <Button className="drawer--button" type="primary" onClick={showDrawer}>
+          <MenuOutlined />
+        </Button>
         <Drawer
-          title="Basic Drawer"
+          title=""
           placement="right"
           closable={true}
           onClose={onClose}
-          visible={isDrawerVisible}
-          getContainer={false}
-          style={{ position: 'absolute' }}
+          visible={visible}
+          className="drawer__drawer"
         >
-          <p>Some contents...</p>
+          <Col className="drawer__drawer__linksWrapper">
+            <NavLink className={isCurrentPath("/")} to="/" > &nbsp;Home &nbsp;</NavLink>
+            <NavLink className={isCurrentPath("/about")} to="/about" >&nbsp;About &nbsp;</NavLink>
+            <NavLink className={isCurrentPath("/portfolio")} to="/portfolio" >&nbsp;Portfolio &nbsp;</NavLink>
+            <NavLink className={isCurrentPath("/publications")} to="/publications">&nbsp;Publications &nbsp;</NavLink>
+            <NavLink className={isCurrentPath("/contact")} to="/contact" >&nbsp;Contact &nbsp;</NavLink>
+          </Col>
         </Drawer>
-      </div>
-    );
-  }
+      </Row>
+    </Row>
+  );
+};
 
-export default DrawerBar
+export default DrawerMenu;

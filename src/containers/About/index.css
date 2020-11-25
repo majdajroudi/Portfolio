@@ -7,7 +7,7 @@
     justify-content: center;
     align-items: center;
     background-color: #31393D;
-    height: 75vh;
+    height: 100vh;
 }
 
 .about__contentBox__bottom {
@@ -24,6 +24,7 @@
     justify-content: space-around;
     align-items: center;   
     width: 45%;
+    margin-right: 30px;
 }
 
 .about__contentBox__textCol div {
@@ -44,7 +45,7 @@
 .about__contentBox__textCol div p{
     color: white;
     /* text-shadow: 5px 3px 0px -1px #B8623F; */
-    margin: 0px;
+    margin: 10px 0px;
     text-align: justify;
     font-family: "Nanum Gothic", serif;
 }

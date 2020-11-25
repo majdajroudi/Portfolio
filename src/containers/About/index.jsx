@@ -4,6 +4,12 @@ import { Col, Row} from "antd"
 import {Sides} from "./../../components/Sides";
 import "./index.css"
 
+const textObject = {
+    title: "Hi! this is me to the left",
+    text0: "I believe that my journey placed me in an area where creativeness and logic walk hand-in-hand. I saw the power of coding while working on an academic astrodynamics project, it was then that I said: here is something I don't get bored of. I learned programming languages like Python and C and familirized myself with them.",
+    text1:"I learned Front End development during the Covid-19 pandemic in an immersive bootcamp provided by Re:coded. During the bootcamp I learned technologies like Javascript, CSS, HTML, ReactJS, Firebase and Redux."
+}
+
 const About = () => {
     return (
         <div className="pageWrapper">
@@ -12,8 +18,9 @@ const About = () => {
                     <Row className="about__contentBox__bottom">
                         <Col className="about__contentBox__textCol">
                             <Col>
-                                <h2>Hi, this is me to the left</h2>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse sed enim at ex ultricies sagittis. Phasellus ornare ultrices erat non mollis. Nulla vel cursus est. Integer nec ipsum sodales, ornare ante sit amet, tincidunt nulla. Morbi bibendum ante ante. Donec odio ligula, elementum et sollicitudin vel, consectetur quis arcu. Pellentesque semper tincidunt turpis, quis vulputate leo molestie et.</p> 
+                                <h2>{textObject.title}</h2>
+                                <p>{textObject.text0}</p> 
+                                <p>{textObject.text1}</p>
                             </Col>
                         </Col>
                         <Col className="about__contentBox__imgCol">
