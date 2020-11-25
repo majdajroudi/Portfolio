@@ -1,0 +1,39 @@
+.publications {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: #31393D;
+    height: 75vh;
+}
+
+.publications__article {
+    background-color: #c8c6cb;
+    width: 80%;
+    margin: 50px 0; 
+}
+
+.publications__article__details{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start
+}
+
+.publications__article__details h2 {
+    color: black;
+    font-size: 1.8em;
+    font-family: "Karla", serif;
+    margin: 0px;
+}
+
+.publications__article__details p {
+    text-align: justify;
+    font-family: "Nanum Gothic", serif;
+}
+
+.publications__article--link {
+    color: black;
+    font-size: 1.9em;
+    display: flex;
+    justify-content: flex-end;
+}

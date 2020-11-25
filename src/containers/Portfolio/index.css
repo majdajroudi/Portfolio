@@ -93,12 +93,14 @@
 .websiteTechnologies {
     display: flex;
     justify-content: space-between;
+    font-family: "Nanum Gothic", serif;
 }
 
 .singleTechnology {
     background-color: #31393D;
     color: white;
     margin: 0 4px;
+    font-family: "Nanum Gothic", serif;
 }
 
 @keyframes movedown

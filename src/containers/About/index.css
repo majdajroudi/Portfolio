@@ -2,8 +2,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap');
 
 .about {
-    /* background-color: rgb(66, 66, 66); */
-    background-color: #407C9C;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -48,6 +46,7 @@
     /* text-shadow: 5px 3px 0px -1px #B8623F; */
     margin: 0px;
     text-align: justify;
+    font-family: "Nanum Gothic", serif;
 }
 
 .about__contentBox__imgCol {

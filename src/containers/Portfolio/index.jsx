@@ -21,7 +21,7 @@ const movieObject = {
     title: "Movie Project",
     link: "https://fadime-ozdemir.github.io/oop-movie/#",
     github: "https://github.com/fadime-ozdemir/oop-movie",
-    technologies: ["Javascript", "Bootstrap", "HTML5", "CSS3"],
+    technologies: ["Javascript", "React-Bootstrap", "HTML5", "CSS3"],
     description: "A website that was developed using OOP and uses database to display famous movies, their ratings and filter movies according to user's choice",
     image: movieProjectImg
 }

@@ -5,5 +5,5 @@ body {
 .pageWrapper {
     display: flex;
     flex-direction: row;
-    background-color:  #407C9C;;
+    background-color:  #407C9C;
 }
