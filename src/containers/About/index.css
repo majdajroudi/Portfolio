@@ -14,7 +14,7 @@
 
 .about__contentBox__bottom {
     display: flex;
-    flex-direction: row;
+    flex-direction: row-reverse;
     justify-content: space-around;
     height: 100%;
 }
@@ -33,6 +33,14 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+.about__contentBox__textCol h2 {
+    text-align: initial;
+    color: white;
+    font-size: 2.5em;
+    text-shadow: 2px 2px #B8623F;
+    font-family: "Karla", serif;
+    margin: 0px;
 }
 
 .about__contentBox__textCol div p{
@@ -56,5 +64,5 @@
 }
 
 .about__contentBox__imgContainer img {
-    max-width: 70%;
+    max-width: 50%;
 }
