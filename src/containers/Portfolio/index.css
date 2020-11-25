@@ -14,7 +14,7 @@
 }
 
 .imageCard {
-    width:40%;
+    width:45%;
     height:auto;
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
@@ -25,7 +25,25 @@
     margin: 30px 20px;
 }
 
+.websiteLinks {
+    display: flex;
+    justify-content: space-around;
+}
+
+.websiteLinks a span svg{
+    color: white;
+    font-size: 2em;
+}
+
+.websiteLinks a span svg:hover {
+    color: #B8623F;
+}
+
 .websiteDescription {
+    text-align: center;
+}
+
+.websiteInfo {
     position: absolute;
   top: 0;
   bottom: 0;
@@ -50,7 +68,7 @@
     margin: 0px;
 }
 
-.imageCard:hover .websiteDescription {
+.imageCard:hover .websiteInfo {
     visibility: visible;
     opacity: 1;
     animation: movedown 1s
@@ -58,7 +76,6 @@
 
 .imageCard:hover{
     opacity: 0.5;
-    cursor: pointer;
 }
 
 .imageCard .ant-card-body{
@@ -73,7 +90,18 @@
     max-height: auto;
 }
 
+.websiteTechnologies {
+    display: flex;
+    justify-content: space-between;
+}
+
+.singleTechnology {
+    background-color: #31393D;
+    color: white;
+    margin: 0 4px;
+}
+
 @keyframes movedown
-{ from {top:-20px; opacity: 0;}
+{ from {top:-10px; opacity: 0;}
 to {top:0px; opacity: 1}
 }
