@@ -100,8 +100,7 @@
 
     .home__contentBox__imgCol {
         width: 60%;
-        margin-top: 10px;
-        margin-left: 60px;
+        margin-top: 1%;
     }
 
     .home__contentBox__nameCol {
@@ -110,6 +109,10 @@
 
     .home__contentBox__imgContainer img {
         max-width: 100%;
+    }
+
+    .home__contentBox__nameCol div h3 {
+        font-size: 0.9em;
     }
 
 }
