@@ -15,7 +15,8 @@
 	background-image: linear-gradient(to top, #407C9C 50%, #31393D 50%);
     }
     
-.navbar__elementsWrapper--element:hover { 
+.navbar__elementsWrapper--element:hover,
+.navbar__activeElement { 
     background-position: 0 100%; 
     color: #fff; 
 }

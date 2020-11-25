@@ -2,6 +2,7 @@ import React from "react";
 import {Card, Row} from "antd";
 import madreamlibsImg from "./../../images/madreamlibs-portfolio.png"
 import juniperImg from "./../../images/juniper-portfolio.png"
+import portfolioImg from "./../../images/portfolio.png"
 import taskManagerImg from "./../../images/task-manager-portfolio.png"
 import {Sides} from "./../../components/Sides";
 import {GithubOutlined, LinkOutlined } from "@ant-design/icons";
@@ -34,7 +35,16 @@ const madreamlibsObject = {
     image: madreamlibsImg
 }
 
-const IMAGES = [juniperObject, taskManagerObject, madreamlibsObject];
+const portfolioObject = {
+    title: "Portfolio",
+    link: "majd-ajroudi-portfolio.netlify.app",
+    github: "",
+    technologies: ["ReactJS", "Antdesign", "Font Awesome", "CSS"],
+    description: "A personal portfolio of the all the frontend projects developed by Majd Ajroudi",
+    image: portfolioImg
+}
+
+const IMAGES = [juniperObject, taskManagerObject,portfolioObject, madreamlibsObject];
 
 const Portfolio = () => {
 
