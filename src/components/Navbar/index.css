@@ -30,7 +30,6 @@
 .navbar {
     background-color: #31393D;
     display: flex;
-    opacity: 0.9;
     justify-content: flex-end;
     align-items:center;
     height: 7%;
