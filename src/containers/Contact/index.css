@@ -33,3 +33,23 @@
 .contact__form .ant-form-item {
     width: 35%;
 }
+
+@media (max-width: 768px) {
+    .contact__form .ant-form-item {
+        width: 60%;
+    }
+
+    .contact {
+        margin-bottom: 40px;
+    }
+}
+
+@media (max-width: 425px) {
+    .contact__form .ant-form-item {
+        width: 80%;
+    }
+
+    .contact {
+        margin-bottom: 90px;
+    }
+}
