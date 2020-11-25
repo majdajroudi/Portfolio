@@ -13,6 +13,8 @@
     flex-direction: column;
     background-color:#31393D ;
     height: 100%;
+    -webkit-box-shadow: 5px 5px 28px 4px #000000; 
+    box-shadow: 5px 5px 28px 4px #000000;
     width: 100%;
 }
 
