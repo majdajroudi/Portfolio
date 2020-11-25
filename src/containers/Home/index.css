@@ -104,7 +104,11 @@
     }
 
     .home__contentBox__nameCol {
-        margin-right: 60px;
+        margin-right: 10px;
+    }
+
+    .home__contentBox__nameCol .ant-col {
+        width: 100%;
     }
 
     .home__contentBox__imgContainer img {
@@ -112,7 +116,8 @@
     }
 
     .home__contentBox__nameCol div h3 {
-        font-size: 0.9em;
+        font-size: 1.2em;
+        width: 100%;
     }
 
 }
