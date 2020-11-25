@@ -37,7 +37,7 @@ const madreamlibsObject = {
 
 const portfolioObject = {
     title: "Portfolio",
-    link: "https://majd-ajroudi-portfolio.netlify.app",
+    link: "https://majd-ajroudi-portolfio.netlify.app",
     github: "https://github.com/majdajroudi/Portfolio",
     technologies: ["ReactJS", "Antdesign", "Font Awesome", "CSS"],
     description: "A personal portfolio of the all the frontend projects developed by Majd Ajroudi",
