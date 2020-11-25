@@ -19,7 +19,7 @@ const juniperObject = {
 
 const taskManagerObject = {
     title: "Task Manager",
-    link: "https://task-manager-website.netlify.app/login",
+    link: "https://task-manager-website.netlify.app",
     github: "https://github.com/jennethydyrova/board-project",
     technologies: ["ReactJS", "Firebase", "Antdesign", "CSS"],
     description: "A simple app that lets you create you account and manage your and your team's tasks",
@@ -37,8 +37,8 @@ const madreamlibsObject = {
 
 const portfolioObject = {
     title: "Portfolio",
-    link: "majd-ajroudi-portfolio.netlify.app",
-    github: "",
+    link: "https://majd-ajroudi-portfolio.netlify.app",
+    github: "https://github.com/majdajroudi/Portfolio",
     technologies: ["ReactJS", "Antdesign", "Font Awesome", "CSS"],
     description: "A personal portfolio of the all the frontend projects developed by Majd Ajroudi",
     image: portfolioImg
