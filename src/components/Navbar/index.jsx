@@ -12,7 +12,6 @@ const Navbar = () => {
     })
 
     const isCurrentPath = (path) => {
-        const currentPath = window.location.path;
         if (location.pathname === path) {
           return "navbar__elementsWrapper--element navbar__activeElement";
         } else {
