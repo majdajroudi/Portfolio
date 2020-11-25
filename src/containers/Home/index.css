@@ -12,7 +12,7 @@
     align-items: center;
     flex-direction: column;
     background-color:#31393D ;
-    height: 75vh;
+    height: 100%;
     width: 100%;
 }
 
@@ -20,6 +20,8 @@
     display: flex;
     flex-direction: row;
     height: 100%;
+    margin-top: 50px;
+    margin-bottom: 150px
 }
 
 
@@ -93,16 +95,21 @@
     .home__contentBox__bottom {
         flex-direction: column;
         align-items: center;
+        margin-bottom: 100px;
     }
 
     .home__contentBox__imgCol {
         width: 60%;
-        margin-top: 30px;
+        margin-top: 40px;
         margin-left: 60px;
     }
 
     .home__contentBox__nameCol {
         margin-right: 60px;
+    }
+
+    .home__contentBox__imgContainer img {
+        max-width: 100%;
     }
 
 }
