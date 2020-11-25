@@ -92,5 +92,17 @@
 
     .home__contentBox__bottom {
         flex-direction: column;
+        align-items: center;
     }
+
+    .home__contentBox__imgCol {
+        width: 60%;
+        margin-top: 30px;
+        margin-left: 60px;
+    }
+
+    .home__contentBox__nameCol {
+        margin-right: 60px;
+    }
+
 }

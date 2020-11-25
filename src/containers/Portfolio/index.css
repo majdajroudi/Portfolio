@@ -1,9 +1,10 @@
 .portfolio {
     background-color:#31393D;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    height: 100%;
 }
 
 .portfolio__bottom {
@@ -11,6 +12,14 @@
     flex-direction: row;
     justify-content: space-around;
     margin: 50px 0;
+}
+
+.portfolio__bottom__pageTitle {
+    color: white;
+    font-size: 4em;
+    text-shadow: 2px 2px #B8623F;
+    font-family: "Karla", serif;
+    margin: 0px;
 }
 
 .imageCard {
@@ -106,4 +115,22 @@
 @keyframes movedown
 { from {top:-10px; opacity: 0;}
 to {top:0px; opacity: 1}
+}
+
+@media (max-width: 768px) {
+    .imageCard {
+        width: 70%;
+        margin: 15px 20px
+    }
+
+    .portfolio__bottom {
+        margin: 20px 0;
+    }
+}
+
+@media (max-width: 425px) {
+    .imageCard {
+        width: 85%;
+        margin: 10px 20px
+    }
 }
