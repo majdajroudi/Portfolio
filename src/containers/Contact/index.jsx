@@ -1,7 +1,7 @@
 import React from "react";
 import "./index.css";
 import {Sides} from "./../../components/Sides";
-import {Row, Col, Form, Input, Button} from "antd";
+import {Row, Form, Input, Button} from "antd";
 
 const Contact = () => {
     
