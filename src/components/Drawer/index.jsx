@@ -29,7 +29,7 @@ const DrawerMenu = () => {
   };
 
   return (
-    screenWidth <= 1024 && <Row className="drawerWrapper">
+    screenWidth <= 768 && <Row className="drawerWrapper">
       <Row className="drawer">
         <Button className="drawer--button" type="primary" onClick={showDrawer}>
           <MenuOutlined />

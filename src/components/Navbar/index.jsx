@@ -19,7 +19,7 @@ const Navbar = () => {
         }
       };
 
-    return ( screenWidth > 1024&& <div className="navbarWrapper"><Row className="navbar">
+    return ( screenWidth > 768&& <div className="navbarWrapper"><Row className="navbar">
                 <Row className="navbar__elementsWrapper">
                     <NavLink className={isCurrentPath("/")} to="/" > &nbsp;Home &nbsp;</NavLink>
                     <NavLink className={isCurrentPath("/about")} to="/about" >&nbsp;About &nbsp;</NavLink>
