@@ -22,7 +22,7 @@ const movieObject = {
     link: "https://fadime-ozdemir.github.io/oop-movie/#",
     github: "https://github.com/fadime-ozdemir/oop-movie",
     technologies: ["Javascript", "Bootstrap", "HTML5", "CSS3"],
-    description: "A website that displays a database to display famous movies, their ratings and filter movies according to user's choice",
+    description: "A website that was developed using OOP and displays a database to display famous movies, their ratings and filter movies according to user's choice",
     image: movieProjectImg
 }
 
