@@ -50,6 +50,7 @@
 
 .websiteDescription {
     text-align: center;
+    width:80%;
 }
 
 .websiteInfo {
@@ -71,7 +72,7 @@
 
 .websiteName {
     color: white;
-    font-size: 4em;
+    font-size: 3em;
     text-shadow: 2px 2px #B8623F;
     font-family: "Karla", serif;
     margin: 0px;
@@ -125,6 +126,14 @@ to {top:0px; opacity: 1}
 
     .portfolio__bottom {
         margin: 20px 0;
+    }
+
+    .websiteDescription {
+        display: none;
+    }
+
+    .websiteName {
+        font-size: 2em;
     }
 }
 
