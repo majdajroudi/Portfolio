@@ -78,6 +78,11 @@
     margin: 0px;
 }
 
+.imageCard:focus .websiteInfo {
+    visibility: visible;
+    opacity: 1;
+}
+
 .imageCard:hover .websiteInfo {
     visibility: visible;
     opacity: 1;
