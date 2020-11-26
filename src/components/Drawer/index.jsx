@@ -16,7 +16,7 @@ const DrawerMenu = () => {
     setVisible(true);
   };
 
-  const onClose = () => {
+  const handleClose = () => {
     setVisible(false);
   };
 
@@ -38,16 +38,16 @@ const DrawerMenu = () => {
           title=""
           placement="right"
           closable={true}
-          onClose={onClose}
+          onClose={handleClose}
           visible={visible}
           className="drawer__drawer"
         >
           <Col className="drawer__drawer__linksWrapper">
-            <NavLink className={isCurrentPath("/")} to="/" > &nbsp;Home &nbsp;</NavLink>
-            <NavLink className={isCurrentPath("/about")} to="/about" >&nbsp;About &nbsp;</NavLink>
-            <NavLink className={isCurrentPath("/portfolio")} to="/portfolio" >&nbsp;Portfolio &nbsp;</NavLink>
-            <NavLink className={isCurrentPath("/publications")} to="/publications">&nbsp;Publications &nbsp;</NavLink>
-            <NavLink className={isCurrentPath("/contact")} to="/contact" >&nbsp;Contact &nbsp;</NavLink>
+            <NavLink onClick={handleClose} className={isCurrentPath("/")} to="/" > &nbsp;Home &nbsp;</NavLink>
+            <NavLink onClick={handleClose} className={isCurrentPath("/about")} to="/about" >&nbsp;About &nbsp;</NavLink>
+            <NavLink onClick={handleClose} className={isCurrentPath("/portfolio")} to="/portfolio" >&nbsp;Portfolio &nbsp;</NavLink>
+            <NavLink onClick={handleClose} className={isCurrentPath("/publications")} to="/publications">&nbsp;Publications &nbsp;</NavLink>
+            <NavLink onClick={handleClose} className={isCurrentPath("/contact")} to="/contact" >&nbsp;Contact &nbsp;</NavLink>
           </Col>
         </Drawer>
       </Row>
