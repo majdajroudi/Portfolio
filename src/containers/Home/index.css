@@ -71,6 +71,35 @@
     max-width: 70%;
 }
 
+.home__contentBox__nameCol .home__contentBox__nameCol__icons a {
+    font-size: 2.2em;
+}
+
+.home__contentBox__nameCol .home__contentBox__nameCol__icons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.home__contentBox__nameCol__icons a:hover{
+    color: #B8623F;
+}
+
+.home__contentBox__nameCol__icons a {
+    width: 43%;
+    color: white;
+}
+
+.home__contentBox__nameCol__icons .anticon-linkedin {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.home__contentBox__nameCol__icons .anticon-github {
+    display: flex;
+    justify-content: flex-start;
+}
+
 @media (max-width: 768px) {
     .home__contentBox__imgContainer img {
         max-width: 90%;
@@ -105,6 +134,7 @@
 
     .home__contentBox__nameCol {
         margin-right: 10px;
+        margin-bottom: 20px;
     }
 
     .home__contentBox__nameCol .ant-col {
