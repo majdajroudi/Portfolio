@@ -6,6 +6,8 @@ import taskManagerImg from "./../../images/task-manager-portfolio.png"
 import movieProjectImg from "./../../images/movie-project-portfolio.png"
 import {Sides} from "./../../components/Sides";
 import {GithubOutlined, LinkOutlined } from "@ant-design/icons";
+import {motion} from "framer-motion"
+import {pageTransitions, transitionProperties} from "./../../components/HelperFunctions/index"
 import "./index.css";
 
 const juniperObject = {
@@ -46,11 +48,18 @@ const madreamlibsObject = {
 
 const IMAGES = [juniperObject, movieObject,taskManagerObject, madreamlibsObject];
 
-const Portfolio = () => {
+const Projects = () => {
 
 
     return (
-        <div className="pageWrapper">
+        <motion.div 
+        initial="initial"
+        animate="in"
+        exit="out"
+        variants={pageTransitions}
+        transition= {transitionProperties}
+        className="pageWrapper"
+        key="/projects">
             <Sides />
             <div className="portfolio">
                     <Row className="portfolio__bottom">
@@ -73,8 +82,8 @@ const Portfolio = () => {
                     </Row>
             </div>
             <Sides />
-        </div>
+        </motion.div>
     )
 }
 
-export default Portfolio
+export default Projects

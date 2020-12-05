@@ -3,6 +3,8 @@ import "./index.css";
 import emailjs from 'emailjs-com';
 import {Sides} from "./../../components/Sides";
 import {Row, Form, Input, Button, message} from "antd";
+import {motion} from "framer-motion";
+import {pageTransitions, transitionProperties} from "./../../components/HelperFunctions/index";
 
 const Contact = () => {
     const [formState, setFormState] = useState({
@@ -44,7 +46,14 @@ const Contact = () => {
     
 
     return (
-        <div className="pageWrapper">
+        <motion.div 
+        initial="initial"
+        animate="in"
+        exit="out"
+        variants={pageTransitions}
+        transition={transitionProperties}
+        className="pageWrapper"
+        key="/contact">
             <Sides />
 
             <Row className="contact">
@@ -84,7 +93,7 @@ const Contact = () => {
             </Row>
             
             <Sides />
-        </div>
+        </motion.div>
     )
 }
 

@@ -1,15 +1,13 @@
-import React, {useState} from "react"
+import React from "react"
 import {Row} from "antd"
 import {NavLink, useLocation} from "react-router-dom";
+import {pageTransitions, transitionProperties} from "./../../components/HelperFunctions/index"
+import {motion} from "framer-motion";
 import "./index.css"
 
 
 const Navbar = () => {
-    const [screenWidth, setScreenWidth] = useState(window.innerWidth);
     const location = useLocation()
-    window.addEventListener("resize", () => {
-        setScreenWidth(window.innerWidth)
-    })
 
     const isCurrentPath = (path) => {
         if (location.pathname === path) {
@@ -19,15 +17,24 @@ const Navbar = () => {
         }
       };
 
-    return ( screenWidth > 768&& <div className="navbarWrapper"><Row className="navbar">
-                <Row className="navbar__elementsWrapper">
-                    <NavLink className={isCurrentPath("/")} to="/" > &nbsp;Home &nbsp;</NavLink>
-                    <NavLink className={isCurrentPath("/about")} to="/about" >&nbsp;About &nbsp;</NavLink>
-                    <NavLink className={isCurrentPath("/portfolio")} to="/portfolio" >&nbsp;Portfolio &nbsp;</NavLink>
-                    <NavLink className={isCurrentPath("/publications")} to="/publications">&nbsp;Publications &nbsp;</NavLink>
-                    <NavLink className={isCurrentPath("/contact")} to="/contact" >&nbsp;Contact &nbsp;</NavLink>
-                </Row>
-            </Row></div>
+    return ( <motion.div 
+                initial="initial"
+                animate="in"
+                exit="out"
+                variants={pageTransitions}
+                transition={transitionProperties}
+                className="navbarWrapper" 
+                key={location.pathname}>
+                  <Row className="navbar">
+                    <Row className="navbar__elementsWrapper">
+                      <NavLink className={isCurrentPath("/")} to="/" > &nbsp;Home &nbsp;</NavLink>
+                      <NavLink className={isCurrentPath("/about")} to="/about" >&nbsp;About &nbsp;</NavLink>
+                      <NavLink className={isCurrentPath("/projects")} to="/projects" >&nbsp;Projects &nbsp;</NavLink>
+                      <NavLink className={isCurrentPath("/publications")} to="/publications">&nbsp;Publications &nbsp;</NavLink>
+                      <NavLink className={isCurrentPath("/contact")} to="/contact" >&nbsp;Contact &nbsp;</NavLink>
+                    </Row>
+                  </Row>
+                </motion.div>
     )
 }
 

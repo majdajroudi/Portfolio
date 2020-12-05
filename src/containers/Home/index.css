@@ -54,6 +54,13 @@
     font-family: "Nanum Gothic", serif;
 }
 
+.home__contentBox__nameCol div h3.home__contentBox__nameCol--email {
+    color:white;
+    font-size: 1.2em;
+    font-family: "Nanum Gothic", serif;
+    align-self: center;
+}
+
 .home__contentBox__imgCol {
     width: 50%;
     display: flex;
@@ -112,6 +119,10 @@
     .home__contentBox__nameCol div h3 {
         font-size: 1.4em;
     }
+
+    .home__contentBox__nameCol div h3.home__contentBox__nameCol--email {
+        font-size: 1.1em;
+    }
 }
 
 @media (max-width: 425px) {
@@ -148,6 +159,10 @@
     .home__contentBox__nameCol div h3 {
         font-size: 1.2em;
         width: 100%;
+    }
+
+    .home__contentBox__nameCol div h3.home__contentBox__nameCol--email {
+        font-size: 1em;
     }
 
 }

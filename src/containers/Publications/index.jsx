@@ -3,6 +3,8 @@ import "./index.css";
 import {Col, Row, Card} from "antd"
 import { LinkOutlined } from "@ant-design/icons";
 import {Sides} from "./../../components/Sides";
+import {pageTransitions, transitionProperties} from "./../../components/HelperFunctions/index"
+import {motion} from "framer-motion"
 
 const dopplerEffect = {
     title: "Orbit Determination From Doppler and Angle Data",
@@ -15,7 +17,14 @@ const ARTICLES = [dopplerEffect]
 const Publications = () => {
 
     return(
-        <div className="pageWrapper">
+        <motion.div 
+        initial="initial"
+        animate="in"
+        exit="out"
+        variants={pageTransitions}
+        transition={transitionProperties}
+        className="pageWrapper"
+        key="/publications">
             <Sides/>
             <Col className="publications">
                 {ARTICLES.map((article) => {
@@ -33,7 +42,7 @@ const Publications = () => {
                 })}
             </Col>
             <Sides/>
-        </div>
+        </motion.div>
     )
 }
 

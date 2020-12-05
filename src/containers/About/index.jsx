@@ -2,6 +2,8 @@ import React, {useState} from 'react';
 import aboutImg from "../../images/majd.svg"
 import { Col, Row} from "antd"
 import {Sides} from "./../../components/Sides";
+import {motion} from "framer-motion"
+import {pageTransitions, transitionProperties} from "./../../components/HelperFunctions/index"
 import "./index.css"
 
 const About = () => {
@@ -17,7 +19,14 @@ const About = () => {
     }
 
     return (
-        <div className="pageWrapper">
+        <motion.div
+        initial= "initial"
+        animate="in"
+        exit="out"
+        variants={pageTransitions}
+        transition={transitionProperties}
+        className="pageWrapper"
+        key="/about">
             <Sides />
             <div className="about">
                     <Row className="about__contentBox__bottom">
@@ -36,7 +45,7 @@ const About = () => {
                     </Row>
             </div>
             <Sides />
-        </div>
+        </motion.div>
     )
 }
 
