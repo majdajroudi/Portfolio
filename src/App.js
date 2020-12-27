@@ -44,7 +44,7 @@ function App() {
             <TopBottom/>
           </Route>
 
-          <Route path="/publications" key="/publications">
+          <Route path="/blog" key="/publications">
             <TopBottom/>
             {screenWidth > 768 ? <Navbar /> : <Drawer />}
             <Publications />

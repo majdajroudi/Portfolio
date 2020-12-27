@@ -9,7 +9,7 @@ import {BrowserRouter as Router} from "react-router-dom"
 ReactDOM.render(
   <React.StrictMode>
     <Helmet>
-      <title>Majd Ajroudi</title>
+      <title>Majd Ajroudi - Portfolio</title>
     </Helmet>
     <Router>
       <App />

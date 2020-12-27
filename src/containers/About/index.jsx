@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 import aboutImg from "../../images/majd.svg"
-import { Col, Row} from "antd"
+import { Col, Row, Button} from "antd"
 import {Sides} from "./../../components/Sides";
 import {motion} from "framer-motion"
 import {pageTransitions, transitionProperties} from "./../../components/HelperFunctions/index"
@@ -36,6 +36,11 @@ const About = () => {
                                 <p>{textObject.text0}</p> 
                                 <p>{textObject.text1}</p>
                             </Col>
+                            <Row className="resumeButton">
+                                <Button className="resumeButton--button">
+                                    <a target="_blank" rel="noopener noreferrer" href="https://www.keepandshare.com/doc11/29766/majd-s-resume-1-pdf-78k?da=y">Check My Resume!</a>
+                                </Button>
+                            </Row>
                         </Col>
                         <Col className="about__contentBox__imgCol">
                             <Row className="about__contentBox__imgContainer">

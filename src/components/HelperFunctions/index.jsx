@@ -7,7 +7,7 @@ export const transitionProperties = {
 export const pageTransitions = {
     initial : {
         x:"-100vw",
-        scale: 1.2
+        scale: 0.1
     },
     in: {
         x: 0,
@@ -15,6 +15,6 @@ export const pageTransitions = {
     },
     out: {
         x:"100vw",
-        scale: 0.7
+        scale: 0.1
       }
 }

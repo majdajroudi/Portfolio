@@ -67,6 +67,14 @@
     max-width: 50%;
 }
 
+
+.resumeButton--button:hover {
+    /* background-color: #B8623F; */
+    background: rgb(184,98,63);
+    background: linear-gradient(9deg, rgba(184,98,63,1) 15%, rgba(64,124,156,1) 100%);
+    color: white;
+}
+
 @media (max-width: 1024px) {
     .about__contentBox__bottom {
         margin: 10px 0;

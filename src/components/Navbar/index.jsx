@@ -30,7 +30,7 @@ const Navbar = () => {
                       <NavLink className={isCurrentPath("/")} to="/" > &nbsp;Home &nbsp;</NavLink>
                       <NavLink className={isCurrentPath("/about")} to="/about" >&nbsp;About &nbsp;</NavLink>
                       <NavLink className={isCurrentPath("/projects")} to="/projects" >&nbsp;Projects &nbsp;</NavLink>
-                      <NavLink className={isCurrentPath("/publications")} to="/publications">&nbsp;Publications &nbsp;</NavLink>
+                      <NavLink className={isCurrentPath("/blog")} to="/blog">&nbsp;Blog &nbsp;</NavLink>
                       <NavLink className={isCurrentPath("/contact")} to="/contact" >&nbsp;Contact &nbsp;</NavLink>
                     </Row>
                   </Row>
