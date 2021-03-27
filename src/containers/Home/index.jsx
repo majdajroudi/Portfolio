@@ -18,7 +18,7 @@ const Home = () => {
         transition={transitionProperties}
         className="pageWrapper"
         key="/home">
-            <Sides />
+            {/* <Sides /> */}
             <div className="home">
                 <Row className="home__contentBox__bottom">
                     <Col className="home__contentBox__nameCol">
@@ -42,7 +42,7 @@ const Home = () => {
                     </Col>
                 </Row>
             </div>
-            <Sides />
+            {/* <Sides /> */}
         </motion.div>
     )
 }

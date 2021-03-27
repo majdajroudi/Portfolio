@@ -24,38 +24,38 @@ function App() {
       <AnimatePresence exitBeforeEnter>
         <Switch location={location} key={location.pathname} className="App">
           <Route exact path="/" key="/">
-            <TopBottom/>
+            {/* <TopBottom/> */}
             {screenWidth > 768 ? <Navbar /> : <Drawer />}
             <Home />
-            <TopBottom/>
+            {/* <TopBottom/> */}
           </Route>
 
           <Route path="/about" key="/about">
-            <TopBottom/>
+            {/* <TopBottom/> */}
             {screenWidth > 768 ? <Navbar /> : <Drawer />}
             <About/>
-            <TopBottom/>
+            {/* <TopBottom/> */}
           </Route>
 
           <Route path="/projects" key="/projects">
-            <TopBottom/>
+            {/* <TopBottom/> */}
             {screenWidth > 768 ? <Navbar /> : <Drawer />}
             <Projects/>
-            <TopBottom/>
+            {/* <TopBottom/> */}
           </Route>
 
           <Route path="/blog" key="/publications">
-            <TopBottom/>
+            {/* <TopBottom/> */}
             {screenWidth > 768 ? <Navbar /> : <Drawer />}
             <Publications />
-            <TopBottom/>
+            {/* <TopBottom/> */}
           </Route>
 
           <Route path="/contact" key="/contact">
-            <TopBottom/>
+            {/* <TopBottom/> */}
             {screenWidth > 768 ? <Navbar /> : <Drawer />}
             <Contact/>
-            <TopBottom/>
+            {/* <TopBottom/> */}
           </Route>
           {/* <Route exact path="/" key="/drawer" component={Drawer} />
           <Route exact path="/" key="/navbar" component={Navbar} />
