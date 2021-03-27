@@ -74,8 +74,8 @@ const Projects = () => {
                                     {project.technologies.map((tech) => <p className="singleTechnology">{tech}</p> )}
                                     </Row>
                                     <Row className="websiteLinks">
-                                        <a href={project.github}> <GithubOutlined /></a>
-                                        <a href={project.link}><LinkOutlined /></a>
+                                        <a href={project.github} target="_blank" rel="noopener noreferrer"> <GithubOutlined /></a>
+                                        <a href={project.link} target="_blank" rel="noopener noreferrer"><LinkOutlined /></a>
                                     </Row>
                                 </div>
                             </a>
