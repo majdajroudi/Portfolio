@@ -17,8 +17,14 @@ const dopplerEffect = {
     link: "http://aiac.ae.metu.edu.tr/paper.php?Paper=AIAC-2019-185"
 }
 
+const singleRootMethod = {
+    title: "UZAKLIK DEGİŞİMİ VE AÇI VERİSİ TEMELLİ TEK KÖKLÜ YÖRÜNGE BELİRLEME YÖNTEMİ GELİŞTİRİLMESİ",
+    description: "This work solves interpolation sensitivity problems arising when applying the method suggested in 'Orbit Determination From Doppler and Angle Data'. several methods to solve those problems are presented in the study. The paper was presented in the 8th ULUSAL HAVACILIK VE UZAY KONFERANSI 2020 (UHUK '20)",
+    link: "https://www.researchgate.net/publication/347471795_UZAKLIK_DEGISIMI_VE_AC_I_VERISI_TEMELLI_TEK_KOKLU_YORUNGEON_BELIRLEME_YONTEMI_GELISTIRILMESI"
+}
+
 const BLOGS = [arabicI18next]
-const ARTICLES = [dopplerEffect]
+const ARTICLES = [dopplerEffect, singleRootMethod]
 
 const Publications = () => {
 
@@ -41,7 +47,7 @@ const Publications = () => {
                                     <p>{article.description}</p>
                                 </Row>
                                 <Row className="publications__article--link">
-                                    <a href={article.link}><LinkOutlined/></a>
+                                    <a target="_blank" rel="noopener noreferrer" href={article.link}><LinkOutlined/></a>
                                 </Row>
                             </Card>
                         )
@@ -60,7 +66,7 @@ const Publications = () => {
                                     <p>{article.description}</p>
                                 </Row>
                                 <Row className="publications__article--link">
-                                    <a href={article.link}><LinkOutlined/></a>
+                                    <a target="_blank" rel="noopener noreferrer" href={article.link}><LinkOutlined/></a>
                                 </Row>
                             </Card>
                         )
