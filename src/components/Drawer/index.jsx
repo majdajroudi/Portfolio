@@ -53,7 +53,7 @@ const DrawerMenu = () => {
             <NavLink onClick={handleClose} className={isCurrentPath("/")} to="/" > &nbsp;Home &nbsp;</NavLink>
             <NavLink onClick={handleClose} className={isCurrentPath("/about")} to="/about" >&nbsp;About &nbsp;</NavLink>
             <NavLink onClick={handleClose} className={isCurrentPath("/projects")} to="/projects" >&nbsp;Projects &nbsp;</NavLink>
-            <NavLink onClick={handleClose} className={isCurrentPath("/publications")} to="/publications">&nbsp;Publications &nbsp;</NavLink>
+            <NavLink onClick={handleClose} className={isCurrentPath("/blog")} to="/blog">&nbsp;Blog &nbsp;</NavLink>
             <NavLink onClick={handleClose} className={isCurrentPath("/contact")} to="/contact" >&nbsp;Contact &nbsp;</NavLink>
           </Col>
         </Drawer>

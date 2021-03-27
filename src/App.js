@@ -1,7 +1,6 @@
 import React,{useState, lazy, Suspense} from 'react';
 import './App.css';
 import 'antd/dist/antd.css'
-// import Projects from "./containers/Projects";
 import Drawer from "./components/Drawer"
 import Contact from "./containers/Contact"
 import Publications from "./containers/Publications"
@@ -47,7 +46,7 @@ function App() {
             </Suspense>
           </Route>
 
-          <Route path="/blog" key="/publications">
+          <Route path="/blog" key="/blog">
             {screenWidth > 768 ? <Navbar /> : <Drawer />}
             <Publications />
           </Route>
