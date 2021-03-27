@@ -9,6 +9,7 @@
     width: 100%;
     display: flex;
     justify-content: flex-end;
+    align-items: center;
 }
 
 .drawer--button{
@@ -37,4 +38,12 @@
 .ant-drawer-header {
     background-color:#31393D ;
     border: none;
+}
+
+.drawer__name {
+    color: white;
+    font-size: 1.3em;
+    text-shadow: 1.4px 1.4px #B8623F;
+    font-family: "Karla", serif;
+    margin: 10px;
 }

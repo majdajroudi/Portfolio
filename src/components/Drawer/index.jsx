@@ -34,7 +34,10 @@ const DrawerMenu = () => {
       transition={transitionProperties}
       key={location.pathname}
       className="drawerWrapper">
-      <Row className="drawer">
+      <Row className="drawer"
+        style={location.pathname !== "/" && {justifyContent: "space-between"}}>
+        {/*Repeated name on home page looks bad, so only show it when the user is in another route */}
+        {location.pathname !== "/" && <h1 className="drawer__name" >Majd Ajroudi</h1>}
         <Button className="drawer--button" type="primary" onClick={showDrawer}>
           <MenuOutlined />
         </Button>
