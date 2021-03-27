@@ -65,6 +65,7 @@ const Projects = () => {
                     <Row className="portfolio__bottom">
                         {IMAGES.map((project) => {
                         return <Card key={project.title} className="imageCard" >
+                            <a href={project.link} target="_blank" rel="noopener noreferrer">
                                 <img className="websiteImage" src={project.image} alt={project.title} />
                                 <div className="websiteInfo">
                                     <h2 className="websiteName">{project.title}</h2>
@@ -77,6 +78,7 @@ const Projects = () => {
                                         <a href={project.link}><LinkOutlined /></a>
                                     </Row>
                                 </div>
+                            </a>
                             </Card>
                         })}
                     </Row>
