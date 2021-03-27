@@ -1,6 +1,5 @@
 import React from 'react';
 import homeImg from "../../images/homeImg.svg";
-import {Sides} from "./../../components/Sides";
 import {motion} from "framer-motion";
 import {GithubOutlined, LinkedinOutlined } from "@ant-design/icons";
 import {pageTransitions, transitionProperties} from "./../../components/HelperFunctions/index";

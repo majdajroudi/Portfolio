@@ -9,7 +9,6 @@ import Publications from "./containers/Publications"
 import Contact from "./containers/Contact"
 import {Route, useLocation, Switch} from "react-router-dom";
 import Navbar from "./components/Navbar"
-import {TopBottom} from "./components/Sides"
 import {AnimatePresence} from "framer-motion"
 
 function App() {
