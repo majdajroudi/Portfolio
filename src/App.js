@@ -27,44 +27,34 @@ function App() {
       <AnimatePresence exitBeforeEnter>
         <Switch location={location} key={location.pathname} className="App">
           <Route exact path="/" key="/">
-            {/* <TopBottom/> */}
             {screenWidth > 768 ? <Navbar /> : <Drawer />}
             <Suspense fallback={<div className="spinner"> <Spin tip="Loading..." size="large" /> </div>}>
               <Home />
             </Suspense>
-            {/* <TopBottom/> */}
           </Route>
 
           <Route path="/about" key="/about">
-            {/* <TopBottom/> */}
             {screenWidth > 768 ? <Navbar /> : <Drawer />}
             <Suspense fallback={<div className="spinner"> <Spin tip="Loading..." size="large" /> </div>}>
               <About />
             </Suspense>
-            {/* <TopBottom/> */}
           </Route>
 
           <Route path="/projects" key="/projects">
-            {/* <TopBottom/> */}
             {screenWidth > 768 ? <Navbar /> : <Drawer />}
             <Suspense fallback={<div className="spinner"> <Spin tip="Loading..." size="large" /> </div>}>
               <Projects />
             </Suspense>
-            {/* <TopBottom/> */}
           </Route>
 
           <Route path="/blog" key="/publications">
-            {/* <TopBottom/> */}
             {screenWidth > 768 ? <Navbar /> : <Drawer />}
             <Publications />
-            {/* <TopBottom/> */}
           </Route>
 
           <Route path="/contact" key="/contact">
-            {/* <TopBottom/> */}
             {screenWidth > 768 ? <Navbar /> : <Drawer />}
             <Contact/>
-            {/* <TopBottom/> */}
           </Route>
           {/* <Route exact path="/" key="/drawer" component={Drawer} />
           <Route exact path="/" key="/navbar" component={Navbar} />
