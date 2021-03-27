@@ -1,15 +1,19 @@
-import React,{useState} from 'react';
+import React,{useState, lazy, Suspense} from 'react';
 import './App.css';
 import 'antd/dist/antd.css'
-import Home from "./containers/Home/index";
-import About from "./containers/About";
-import Projects from "./containers/Projects";
+// import Projects from "./containers/Projects";
 import Drawer from "./components/Drawer"
-import Publications from "./containers/Publications"
 import Contact from "./containers/Contact"
+import Publications from "./containers/Publications"
 import {Route, useLocation, Switch} from "react-router-dom";
+import { Spin } from 'antd';
 import Navbar from "./components/Navbar"
 import {AnimatePresence} from "framer-motion"
+
+const Projects = lazy(() => import("./containers/Projects"))
+const Home = lazy(() => import("./containers/Home"))
+const About = lazy(() => import("./containers/About"))
+
 
 function App() {
   const [screenWidth, setScreenWidth] = useState(window.innerWidth)
@@ -25,21 +29,27 @@ function App() {
           <Route exact path="/" key="/">
             {/* <TopBottom/> */}
             {screenWidth > 768 ? <Navbar /> : <Drawer />}
-            <Home />
+            <Suspense fallback={<div className="spinner"> <Spin tip="Loading..." size="large" /> </div>}>
+              <Home />
+            </Suspense>
             {/* <TopBottom/> */}
           </Route>
 
           <Route path="/about" key="/about">
             {/* <TopBottom/> */}
             {screenWidth > 768 ? <Navbar /> : <Drawer />}
-            <About/>
+            <Suspense fallback={<div className="spinner"> <Spin tip="Loading..." size="large" /> </div>}>
+              <About />
+            </Suspense>
             {/* <TopBottom/> */}
           </Route>
 
           <Route path="/projects" key="/projects">
             {/* <TopBottom/> */}
             {screenWidth > 768 ? <Navbar /> : <Drawer />}
-            <Projects/>
+            <Suspense fallback={<div className="spinner"> <Spin tip="Loading..." size="large" /> </div>}>
+              <Projects />
+            </Suspense>
             {/* <TopBottom/> */}
           </Route>
 
