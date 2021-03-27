@@ -4,7 +4,6 @@ import madreamlibsImg from "./../../images/madreamlibs-portfolio.png"
 import juniperImg from "./../../images/juniper-portfolio.png";
 import taskManagerImg from "./../../images/task-manager-portfolio.png"
 import movieProjectImg from "./../../images/movie-project-portfolio.png"
-import {Sides} from "./../../components/Sides";
 import {GithubOutlined, LinkOutlined } from "@ant-design/icons";
 import {motion} from "framer-motion"
 import {pageTransitions, transitionProperties} from "./../../components/HelperFunctions/index"
@@ -60,7 +59,6 @@ const Projects = () => {
         transition= {transitionProperties}
         className="pageWrapper"
         key="/projects">
-            <Sides />
             <div className="portfolio">
                     <Row className="portfolio__bottom">
                         {IMAGES.map((project) => {
@@ -83,7 +81,6 @@ const Projects = () => {
                         })}
                     </Row>
             </div>
-            <Sides />
         </motion.div>
     )
 }

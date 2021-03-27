@@ -2,7 +2,6 @@ import React from "react"
 import "./index.css";
 import {Col, Row, Card} from "antd"
 import { LinkOutlined } from "@ant-design/icons";
-import {Sides} from "./../../components/Sides";
 import {pageTransitions, transitionProperties} from "./../../components/HelperFunctions/index"
 import {motion} from "framer-motion"
 
@@ -32,7 +31,6 @@ const Publications = () => {
         transition={transitionProperties}
         className="pageWrapper"
         key="/publications">
-            <Sides/>
             <Col className="publicationsPageContent">
                 <Col className="publications">
                     {BLOGS.map((article) => {
@@ -69,7 +67,6 @@ const Publications = () => {
                     })}
                 </Col>
             </Col>
-            <Sides/>
         </motion.div>
     )
 }

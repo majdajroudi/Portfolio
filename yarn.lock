@@ -9387,6 +9387,13 @@ react-moving-text@^0.0.7:
   resolved "https://registry.yarnpkg.com/react-moving-text/-/react-moving-text-0.0.7.tgz#afa2e3d6a52cc6707bf869ce4d37d7df04993e75"
   integrity sha512-WA72if8QS2/QVOmZ2mDnWu1UFkMqt7Y1TFLfKT3MDRwPbcpz2F7WAyGi349anuKth0bQKg0CQddlQLQQiII8zQ==
 
+react-on-images-loaded@^2.2.5:
+  version "2.2.5"
+  resolved "https://registry.yarnpkg.com/react-on-images-loaded/-/react-on-images-loaded-2.2.5.tgz#177d2f064ce647b248e59fc4af3250f81de70c0e"
+  integrity sha512-9p5hDxBBpyl/Z6RgJNZipnswUFzX/QfMaEHAioSfZy/hm8iFlxoBchuXqqdZlRxQ6Xd2HPR3hAusB+6yeM0cXA==
+  dependencies:
+    prop-types "^15.6.2"
+
 react-overlays@^4.1.0:
   version "4.1.0"
   resolved "https://registry.yarnpkg.com/react-overlays/-/react-overlays-4.1.0.tgz#755a890519b02e3904845172d5223ff2dfb1bb29"

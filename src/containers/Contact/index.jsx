@@ -1,7 +1,6 @@
 import React,{useState} from "react";
 import "./index.css";
 import emailjs from 'emailjs-com';
-import {Sides} from "./../../components/Sides";
 import {Row, Form, Input, Button, message} from "antd";
 import {motion} from "framer-motion";
 import {pageTransitions, transitionProperties} from "./../../components/HelperFunctions/index";
@@ -54,7 +53,6 @@ const Contact = () => {
         transition={transitionProperties}
         className="pageWrapper"
         key="/contact">
-            <Sides />
 
             <Row className="contact">
                 <h3 className="contact__title">Contact Me</h3>
@@ -92,7 +90,6 @@ const Contact = () => {
                 </Form> 
             </Row>
             
-            <Sides />
         </motion.div>
     )
 }

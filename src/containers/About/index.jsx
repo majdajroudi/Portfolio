@@ -1,7 +1,6 @@
 import React, {useState} from 'react';
 import aboutImg from "../../images/majd.svg"
 import { Col, Row, Button} from "antd"
-import {Sides} from "./../../components/Sides";
 import {motion} from "framer-motion"
 import {pageTransitions, transitionProperties} from "./../../components/HelperFunctions/index"
 import "./index.css"
@@ -27,7 +26,6 @@ const About = () => {
         transition={transitionProperties}
         className="pageWrapper"
         key="/about">
-            <Sides />
             <div className="about">
                     <Row className="about__contentBox__bottom">
                         <Col className="about__contentBox__textCol">
@@ -49,7 +47,6 @@ const About = () => {
                         </Col>
                     </Row>
             </div>
-            <Sides />
         </motion.div>
     )
 }
