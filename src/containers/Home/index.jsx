@@ -21,8 +21,8 @@ const Home = () => {
                 <Row className="home__contentBox__bottom">
                     <Col className="home__contentBox__nameCol">
                         <Col>
-                            <h1>Majd</h1>
-                            <h1>Ajroudi</h1>
+                            <h1 className="home__contentBox__nameCol--name">Majd</h1>
+                            <h1 className="home__contentBox__nameCol--surname">Ajroudi</h1>
                             <h3>Front End Developer</h3>
                             <h3 className="home__contentBox__nameCol--email" >majd.ajroudi@gmail.com</h3>
                             <Row className="home__contentBox__nameCol__iconsWrapper">

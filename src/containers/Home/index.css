@@ -38,13 +38,21 @@
     justify-content: flex-start;
 }
 
-.home__contentBox__nameCol div h1{
+.home__contentBox__nameCol--name{
     color: white;
-    font-size: 5em;
-    /* text-shadow: 5px 3px 0px -1px #B8623F; */
     text-shadow: 2px 2px #B8623F;
+    font-size: 5em;
     font-family: "Karla", serif;
     margin: 0px;
+}
+
+.home__contentBox__nameCol--surname{
+    color: white;
+    text-shadow: 2px 2px #B8623F;
+    font-size: 5em;
+    font-family: "Karla", serif;
+    margin: 0px;
+    margin-top: -20px;
 }
 
 .home__contentBox__nameCol div h3 {
