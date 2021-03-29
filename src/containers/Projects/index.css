@@ -50,7 +50,7 @@
 
 .websiteDescription {
     text-align: center;
-    width:80%;
+    width:75%;
 }
 
 .websiteInfo {
@@ -93,11 +93,14 @@
     opacity: 0.5;
 }
 
+.imageCard:hover .websiteImage {
+    filter: blur(5px)
+}
+
 .imageCard .ant-card-body{
     width:100%;
     height:auto;
     padding: 0;
-    
 }
 
 .websiteImage {
@@ -116,6 +119,7 @@
     color: white;
     margin: 0 4px;
     font-family: "Nanum Gothic", serif;
+    font-size: 1.2em;
 }
 
 @keyframes movedown

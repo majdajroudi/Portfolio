@@ -49,7 +49,6 @@ const IMAGES = [juniperObject, movieObject,taskManagerObject, madreamlibsObject]
 
 const Projects = () => {
 
-
     return (
         <motion.div 
         initial="initial"
