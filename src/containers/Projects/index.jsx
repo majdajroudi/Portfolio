@@ -11,7 +11,7 @@ import "./index.css";
 
 const juniperObject = {
     title: "Juniper",
-    link: "https://juniper-ist.netlify.app",
+    link: "https://majdajroudi.github.io/capstone-istanbul-juniper",
     github: "https://github.com/ReCoded-Org/capstone-istanbul-juniper",
     technologies: ["ReactJS", "Firebase", "i18next", "CSS3"],
     description: "An educational gaming platform for kids to teach them aboute climate change and environmental issues",
