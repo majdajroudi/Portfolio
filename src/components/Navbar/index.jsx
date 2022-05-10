@@ -1,8 +1,6 @@
 import React from "react"
 import { Row } from "antd"
 import { NavLink, useLocation } from "react-router-dom";
-import { pageTransitions, transitionProperties } from "./../../components/HelperFunctions/index"
-import { motion } from "framer-motion";
 import "./index.css"
 
 
