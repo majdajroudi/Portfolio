@@ -1,12 +1,12 @@
 export const transitionProperties = {
-    duration : 0.4,
-    type:"tween",
+    duration: 0.7,
+    type: "tween",
     ease: "anticipate"
 }
 
 export const pageTransitions = {
-    initial : {
-        x:"-100vw",
+    initial: {
+        x: "-100vw",
         scale: 0.1
     },
     in: {
@@ -14,7 +14,7 @@ export const pageTransitions = {
         scale: 1
     },
     out: {
-        x:"100vw",
+        x: "100vw",
         scale: 0.1
-      }
+    }
 }
