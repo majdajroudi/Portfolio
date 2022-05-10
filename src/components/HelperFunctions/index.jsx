@@ -1,5 +1,5 @@
 export const transitionProperties = {
-    duration: 0.7,
+    duration: 0.8,
     type: "tween",
     ease: "anticipate"
 }
