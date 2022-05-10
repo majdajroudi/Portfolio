@@ -5,12 +5,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap');
 
 .home {
-    background-color: #407C9C;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background-color:#31393D ;
+    background-color: transparent;
     height: 100%;
     width: 100%;
 }
@@ -28,7 +27,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;   
+    align-items: center;
     width: 50%;
 }
 
@@ -38,7 +37,7 @@
     justify-content: flex-start;
 }
 
-.home__contentBox__nameCol--name{
+.home__contentBox__nameCol--name {
     color: white;
     text-shadow: 2px 2px #B8623F;
     font-size: 5em;
@@ -46,7 +45,7 @@
     margin: 0px;
 }
 
-.home__contentBox__nameCol--surname{
+.home__contentBox__nameCol--surname {
     color: white;
     text-shadow: 2px 2px #B8623F;
     font-size: 5em;
@@ -56,13 +55,13 @@
 }
 
 .home__contentBox__nameCol div h3 {
-    color:#B8623F;
+    color: #B8623F;
     font-size: 2em;
     font-family: "Nanum Gothic", serif;
 }
 
 .home__contentBox__nameCol div h3.home__contentBox__nameCol--email {
-    color:white;
+    color: white;
     font-size: 1.2em;
     font-family: "Nanum Gothic", serif;
     align-self: center;
@@ -75,7 +74,7 @@
     align-items: center;
 }
 
-.home__contentBox__imgContainer{
+.home__contentBox__imgContainer {
     width: 100%;
     display: flex;
     justify-content: center;
@@ -95,7 +94,7 @@
     justify-content: space-around;
 }
 
-.home__contentBox__nameCol__icons a:hover{
+.home__contentBox__nameCol__icons a:hover {
     color: #B8623F;
 }
 
@@ -119,10 +118,10 @@
         max-width: 90%;
     }
 
-    .home__contentBox__nameCol div h1{
+    .home__contentBox__nameCol div h1 {
         font-size: 3.5em;
     }
-    
+
     .home__contentBox__nameCol div h3 {
         font-size: 1.4em;
     }
@@ -133,7 +132,7 @@
 }
 
 @media (max-width: 425px) {
-    .home__contentBox__imgContainer{
+    .home__contentBox__imgContainer {
         width: 100%;
         display: flex;
         justify-content: flex-start;
