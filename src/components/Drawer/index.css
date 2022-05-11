@@ -12,10 +12,11 @@
     align-items: center;
 }
 
-.drawer--button{
+.drawer--button {
     background-color: #31393D;
     border: white;
     margin-top: 10px;
+    z-index: 1000;
 }
 
 .drawer--button span svg {
@@ -27,16 +28,16 @@
     color: #C8C6CB;
 }
 
-.drawer__drawer__linksWrapper{
+.drawer__drawer__linksWrapper {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center ;
+    align-items: center;
 }
 
 .ant-drawer-body,
 .ant-drawer-header {
-    background-color:#31393D ;
+    background-color: #31393D;
     border: none;
 }
 
