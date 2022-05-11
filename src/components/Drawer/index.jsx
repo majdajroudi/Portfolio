@@ -2,8 +2,6 @@ import React, { useState } from 'react';
 import { Drawer, Button, Row, Col } from 'antd';
 import { NavLink, useLocation } from "react-router-dom";
 import { MenuOutlined } from "@ant-design/icons";
-import { motion } from "framer-motion"
-import { pageTransitions, transitionProperties } from "./../HelperFunctions/index"
 import "./index.css"
 
 const DrawerMenu = () => {
