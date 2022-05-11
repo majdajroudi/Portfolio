@@ -106,8 +106,8 @@ const Home = () => {
                                 <h3 className="home__contentBox__nameCol--email" >majd.ajroudi@gmail.com</h3>
                                 <Row className="home__contentBox__nameCol__iconsWrapper">
                                     <Row className="home__contentBox__nameCol__icons">
-                                        <a href="https://www.linkedin.com/in/majd-ajroudi/"><LinkedinOutlined /></a>
-                                        <a href="https://github.com/majdajroudi"><GithubOutlined /></a>
+                                        <a target="_blank" href="https://www.linkedin.com/in/majd-ajroudi/"><LinkedinOutlined /></a>
+                                        <a target="_blank" href="https://github.com/majdajroudi"><GithubOutlined /></a>
                                     </Row>
                                 </Row>
                             </Col>
