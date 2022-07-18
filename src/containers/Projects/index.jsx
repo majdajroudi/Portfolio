@@ -1,12 +1,13 @@
 import React from "react";
-import {Card, Row} from "antd";
+import { Card, Row } from "antd";
 import madreamlibsImg from "./../../images/madreamlibs-portfolio.png"
 import juniperImg from "./../../images/juniper-portfolio.png";
 import taskManagerImg from "./../../images/task-manager-portfolio.png"
+import Chip from "../../components/Chip"
 import movieProjectImg from "./../../images/movie-project-portfolio.png"
-import {GithubOutlined, LinkOutlined } from "@ant-design/icons";
-import {motion} from "framer-motion"
-import {pageTransitions, transitionProperties} from "./../../components/HelperFunctions/index"
+import { GithubOutlined, LinkOutlined } from "@ant-design/icons";
+import { motion } from "framer-motion"
+import { pageTransitions, transitionProperties } from "./../../components/HelperFunctions/index"
 import "./index.css";
 
 const juniperObject = {
@@ -45,22 +46,22 @@ const madreamlibsObject = {
     image: madreamlibsImg
 }
 
-const IMAGES = [juniperObject, movieObject,taskManagerObject, madreamlibsObject];
+const IMAGES = [juniperObject, movieObject, taskManagerObject, madreamlibsObject];
 
 const Projects = () => {
 
     return (
-        <motion.div 
-        initial="initial"
-        animate="in"
-        exit="out"
-        variants={pageTransitions}
-        transition= {transitionProperties}
-        className="pageWrapper"
-        key="/projects">
+        <motion.div
+            initial="initial"
+            animate="in"
+            exit="out"
+            variants={pageTransitions}
+            transition={transitionProperties}
+            className="pageWrapper"
+            key="/projects">
             <div className="portfolio">
-                    <Row className="portfolio__bottom">
-                        {IMAGES.map((project) => {
+                <Row className="portfolio__bottom">
+                    {IMAGES.map((project) => {
                         return <Card key={project.title} className="imageCard" >
                             <a href={project.link} target="_blank" rel="noopener noreferrer">
                                 <img className="websiteImage" src={project.image} alt={project.title} />
@@ -68,7 +69,7 @@ const Projects = () => {
                                     <h2 className="websiteName">{project.title}</h2>
                                     <p className="websiteDescription">{project.description}</p>
                                     <Row className="websiteTechnologies">
-                                    {project.technologies.map((tech) => <p className="singleTechnology">{tech}</p> )}
+                                        {project.technologies.map((tech) => <Chip content={tech} backgroundColor="#31393D" />)}
                                     </Row>
                                     <Row className="websiteLinks">
                                         <a href={project.github} target="_blank" rel="noopener noreferrer"> <GithubOutlined /></a>
@@ -76,9 +77,9 @@ const Projects = () => {
                                     </Row>
                                 </div>
                             </a>
-                            </Card>
-                        })}
-                    </Row>
+                        </Card>
+                    })}
+                </Row>
             </div>
         </motion.div>
     )

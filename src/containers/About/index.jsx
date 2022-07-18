@@ -36,7 +36,7 @@ const About = () => {
                             <h3>Tech Stack:</h3>
                             <p id="tech-stack">
                                 {textObject.stack.map((curr) => (
-                                    <Chip content={curr} backgroundColor={"blue"} />
+                                    <Chip content={curr} />
                                 ))}
                             </p>
                         </Col>
@@ -48,7 +48,7 @@ const About = () => {
                     </Col>
                     <Col className="about__contentBox__imgCol">
                         <Row className="about__contentBox__imgContainer">
-                            <img src={aboutImg} alt="walking man avatar" />
+                            <img src={aboutImg} alt="portrait" />
                         </Row>
                     </Col>
                 </Row>
