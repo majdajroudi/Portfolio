@@ -23,6 +23,12 @@ const singleRootMethod = {
     link: "https://www.researchgate.net/publication/347471795_UZAKLIK_DEGISIMI_VE_AC_I_VERISI_TEMELLI_TEK_KOKLU_YORUNGEON_BELIRLEME_YONTEMI_GELISTIRILMESI"
 }
 
+const lambertProblemMcpi = {
+    title: "Parallel solution of Lambert’s problem using modified Chebyshev-Picard iteration method",
+    description: "In this work, A parallel algorithm have developed to solve Lambert’s problem in a parallel environment. Experiments to test the scalability of the algorithm on both shared and distributed memory architectures were conducted. The experimental results show that the parallel algorithm achieves 8.26- and 3.94-times faster execution time on distributed memory and shared memory architectures, respectively.",
+    link: "https://dergipark.org.tr/tr/pub/ngumuh/issue/68178/1069509"
+}
+
 const BLOGS = [arabicI18next]
 const ARTICLES = [dopplerEffect, singleRootMethod]
 
