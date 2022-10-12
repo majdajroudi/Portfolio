@@ -30,7 +30,7 @@ const lambertProblemMcpi = {
 }
 
 const BLOGS = [arabicI18next]
-const ARTICLES = [dopplerEffect, singleRootMethod]
+const ARTICLES = [dopplerEffect, singleRootMethod, lambertProblemMcpi]
 
 const Publications = () => {
 
